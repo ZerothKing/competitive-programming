@@ -1,0 +1,21 @@
+<snippet>
+	<content><![CDATA[
+	void bfs (int u) {
+	queue<int> q;
+	vis[u] = 1;
+	while(!q.empty()) {
+		int curr = q.front(); q.pop();
+		//process the node
+		for (auto x : adj[curr]) {
+			if (vis[x] == 0) {
+				vis[x] = 1;
+				q.push(x);
+			}
+		}
+	}
+}]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>zzbfs</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
