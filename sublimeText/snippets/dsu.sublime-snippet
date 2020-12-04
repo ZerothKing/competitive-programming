@@ -1,0 +1,28 @@
+<snippet>
+	<content><![CDATA[const int N = 500001;
+
+vi par(N,-1);//memset with -1
+vi R(N,1);// set as 1
+int find (int x) {
+    if (par[x] < 0) return a;
+    else return par[x] = find(par[x]);
+}
+
+void merge (int x, int y) {
+    x = find(x);
+    y = find(y);
+    if (x == y) return;
+    if (R[x] > R[y]) {
+        R[x] += R[y];
+        par[y] = x;
+    }
+    else {
+        R[y] += R[x];
+        par[x] = y;
+    }
+}]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>zzdsu</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
