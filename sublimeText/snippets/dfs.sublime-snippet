@@ -1,6 +1,6 @@
 <snippet>
 	<content>
-const N = 100001;
+<![CDATA[const N = 100001;
 vi adj[N];
 int vis[N];
 // int dis[N];
@@ -12,7 +12,7 @@ void dfs (int u) {
 			dfs(x);
 		}
 	}
-}</content>
+}]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>zzdfs</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
