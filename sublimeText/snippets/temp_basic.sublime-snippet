@@ -1,0 +1,54 @@
+<snippet>
+	<content><![CDATA[
+/******************* This is ZerothKing *******************/
+#include <bits/stdc++.h> 
+using namespace std;
+
+#define REP(i, a, b) for(int i = int(a); i < int(b); i++)
+#define F first
+#define S second
+#define mp make_pair
+#define pb push_back
+#define PI 3.1415926535897932384626433832795
+#define MOD 1000000007
+#define endl "\n"
+#define all(x) (x).begin(), (x).end()
+#define sz(a) int((a).size())
+
+const double pi=acos(-1.0);
+
+typedef long long ll;
+typedef pair<int, int> ii;
+typedef vector<int> vi;
+typedef vector<string> vs;
+typedef vector<ii> vii;
+typedef vector<vi> vvi;
+typedef map<int,int> mpii;
+typedef set<int> seti;
+typedef set<ll> setll;
+typedef multiset<int> mseti;
+typedef vector<ll> vll;
+typedef vector<vll> vvl;
+
+void solve() {
+    int i, j, k, n, m;
+    
+}
+
+
+int main()
+{
+	//freopen("input.txt", "r", stdin);
+	//freopen("output.txt", "w", stdout);
+	ios_base::sync_with_stdio(0), cin.tie(0), cout.tie(0);
+	int t = 1;
+	cin >> t;
+	while (t--) {
+		solve();
+	}
+}]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	 <tabTrigger>zz_basic</tabTrigger> 
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
