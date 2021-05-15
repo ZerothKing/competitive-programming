@@ -1,0 +1,25 @@
+<snippet>
+	<content><![CDATA[
+const int MAXN = 9e7;
+vector<bool> a(MAXN, 0);
+vi primes; 
+
+void sieve() {
+    // false -> prime and our array is global   
+    a[1] = a[0] = true;   
+    for (int i = 2; i*i <= MAXN; i++) {
+        if (!a[i]) {
+            for (int j = i*i; j <= MAXN; j += i) {
+                a[j] = true;
+            }
+        }
+    }
+
+    for (int i = 2; i <= MAXN; i++) if (!a[i]) primes.pb(i);
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>zzsieve_basic</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
